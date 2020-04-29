@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./pic/background.jpg);
+    background-size: cover;
+}
+
+.marqee {
+    height: 5vh;
+    margin: auto;
+    overflow: hidden;
+    background: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.marqee ul {
+    padding-left: 0;
+    display: flex;
+    list-style-type: none;
+    animation: marqee 15s linear infinite;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.marqee ul li {
+    white-space: nowrap;
+    margin-right: 2em;
+    font-weight: bold;
+    color: skyblue;
+}
+
+@keyframes marqee {
+    0% {
+        left: 100%;
+        transform: translateX(0%);
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.text {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bionpic {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+#me {
+    max-width: 35vw;
+    max-height: 60vh;
+}
+
+.area {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+div.area ul li {
+    list-style: none;
+    text-indent: 1rem;
+    text-decoration: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+#contact {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+div.info {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#cont {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.container-fluid {
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+}
+
+.carousel-item img {
+    max-width: 80vw;
+    max-height: 70vh;
+}
+
+#carouselExampleIndicators {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+#pic {
+    align-items: center;
+}
+
+div.description p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.9);
+}
+
+div.description h5 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.9);
+}
+
+html {
+    font-size: 1rem;
+}
+
+.video {
+    width: 50vw;
+}
+
+#intro {
+    text-align: center;
+}
+
+.dsnp {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.head {
+    background-color: rgba(0, 0, 0, 0.7);
+}
